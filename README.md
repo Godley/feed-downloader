@@ -7,10 +7,11 @@
 The service which aggregates the new blog posts of [Computer Science Blogs](http://csblogs.com) users. 
 
 It replaces the [csblogs-feed-aggregator](https://github.com/csblogs/csblogs-feed-aggregator) and improves upon it in the following ways:
-* Can correctly parse a larger range of syndication feeds. ATOM feed parsing is significantly improved.
-* Is much easier to modify and extend thanks to the use of a full behavioural test suite and code linting
+* Correct parsing of a larger range of syndication feeds. ATOM feed parsing is significantly improved.
+ * In theory, this covers ATOM and RSS.
+*  Full behavioural test suite and code linting meaning it's easier to modify and verify new code
 * Discovery of new blog posts kicks off the Amazon Simple Notification Service to inform future iOS/Android CS Blogs apps and the CS Blogs Slack group
-* Move to PostgreSQL from MongoDB
+* PostgreSQL rather than MongoDB
 * Performance is improved by
   * Using an [If-Modified-Since](http://www.freesoft.org/CIE/RFC/1945/58.htm) HTTP request to only download and parse feeds that purports to have changed
   * Increased use of concurrency using [ES2015 Promises](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Promise)
