@@ -17,12 +17,12 @@ The application code is written in Node.js, using [Babel](https://babeljs.io) to
 
 ## How do I develop?
 ### Get yourself a task!
-The very first thing you should do is speak to the project coordinator to discuss exactly which feature or fix you want to work on. Danny can be contacted by emailing [danny@csblogs.com](mailto:danny@csblogs.com), but an even better way to get in touch is to join the Slack group by hitting the slack button in the README of this repository.
+The very first thing you should do is speak to the project coordinator to discuss exactly which feature or fix you want to work on. Danny can be contacted by emailing [danny@csblogs.com](mailto:danny@csblogs.com), but an even better way to get in touch is to join the Slack group by clocking the slack button in the README of this repository.
 
-If an item in the issue tracker has a `myfirstpr` label on it and no one has commented to claim it then you can start work on it, wihtout having to contact anyone, once you've commented to say you're claiming it.
+If an item in the issue tracker has a `myfirstpr` label on it and no one has commented to claim it then you can start work on it, without having to contact anyone, once you've commented to say you're claiming it.
 
 ### Fork the code
-Hit the fork button in the top right hand corner of this repositories page on Github. Forking makes your own personal copy of the code under your name. Clone this new repo to your PC/Mac.
+Click the fork button in the top right hand corner of this repositories page on Github. Forking makes your own personal copy of the code under your name. Clone this new repo to your PC/Mac.
 
 ### Branch
 Now you have the repository on your device you should make a branch name that accurately portrays the unit of work you are doing. Branch names should follow the [WP Calypso](https://github.com/Automattic/wp-calypso/blob/master/docs/git-workflow.md) naming conventions:
@@ -41,7 +41,7 @@ Now, run `npm test`. You should see a bunch of green ticks, and a message saying
 
 Finally, run `npm start` -- this transpiles all of the source code to something Node.js can run and then starts the application.
 
-### Start hacking!
+### Start working!
 Open your editor of choice (I like [VS Code](https://code.visualstudio.com)) and start on the feature or fix you were assigned in step one. Working in a [BDD](https://en.wikipedia.org/wiki/Behavior-driven_development) fashion ensures that all of your code will be tested once you're finished implementing your code.
 
 In order for your code to be accepted into the repository it must conform to the [AirBnB JavaScript programming style guidelines](https://github.com/airbnb/javascript). Don't be daunted by this huge document. You can run `npm run lint` from your command line at any time to see which parts of your code aren't conforming to the spec. To go one step better you can see issues as you type by using an [ESLint plug-in for your favourite editor](http://eslint.org/docs/user-guide/integrations#editors).
